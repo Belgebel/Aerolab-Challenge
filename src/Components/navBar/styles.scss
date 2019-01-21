@@ -1,0 +1,51 @@
+@import '../../styles/colors.scss';
+.navBar {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 42px 16px 32px;
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    z-index: 3;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__logoWrapper {
+    padding-top: 6px;
+  }
+  &__userDataWrapper {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    &--userName {
+      margin: 0px;
+      font-size: 24px;
+      color: $DoveGray;
+      letter-spacing: -0.15px;
+      line-height: 48px;
+      text-align: left;
+      padding-right: 18px;
+    }
+
+    &--userCoins {
+      padding: 0px 34px 0px 12px;
+      background-color: $Gallery;
+      border-radius: 100px;
+      min-width: 23px;
+      height: 48px;
+      font-size: 24px;
+      letter-spacing: -0.15px;
+      line-height: 48px;
+      text-align: left;
+      color: $DoveGray;
+    }
+    &--coinImg {
+      position: absolute;
+      top: 13px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
